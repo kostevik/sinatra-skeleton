@@ -1,0 +1,66 @@
+        <div class="container" id="login_container">
+            <form action="/profile/edit" method="post" class="form-horizontal">
+              <div class="form-group">
+                <center><h3>Edit Profile</h3></center>
+              </div>
+              <div class="form-group">
+                <label for="first_name" class="col-md-2 control-label">First Name</label>
+                <div class="col-md-8">
+                  <input type="first_name" class="form-control" id="first_name" placeholder="First Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last_name" class="col-md-2 control-label">Last Name</label>
+                <div class="col-md-8">
+                  <input type="last_name" class="form-control" id="last_name" placeholder="Last Name">
+                </div>
+              </div> 
+              <div class="form-group">
+                <label for="inputEmail3" class="col-md-2 control-label">Email</label>
+                <div class="col-md-8">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-md-2 control-label">Password</label>
+                <div class="col-md-8">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+             <div class="form-group">
+                <label class="col-md-2 control-label">Gender</label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="male"> male
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="female"> female
+                    </label>
+                <div class="col-md-offset-2 col-md-10">
+                  <br>
+                  <button type="submit" class="btn btn-default">Update</button>
+                </div>
+              </div>
+            </form>
+        </div>
+<!-- <html>
+	<head>
+		<link rel="stylesheet" href="public/stylesheets/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<title>profile</title>
+	</head>
+	<body>
+		<form action="/profile/edit" method="post">
+			<fieldset>
+				<legend>Profile</legend>
+				<label for="email_profile">Email:</label><br><input type="email" name="email_profile" id="email_profile" placeholder="Email"><br>
+				<label for="password_profile">Password:</label><br><input type="password" name="password_profile" id="password_profile" placeholder="Password"><br>
+				<label>Gender:</label><br>
+				<input type="radio" name="sex" value="male">Male<br>
+				<input type="radio" name="sex" value="female">Female<br>
+				<label for="first_name_profile">First Name:</label><br><input type="text" name="first_name_profile" id="first_name_profile" placeholder="First Name"><br>
+				<label for="first_name_profile">Last Name:</label><br><input type="text" name="last_name_profile" id="first_name_profile" placeholder="Last Name">
+			</fieldset>
+	    </form>
+
+	</body>
+</html> -->

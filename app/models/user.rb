@@ -1,3 +1,3 @@
-class Model < ActiveRecord::Base
-
+class User < ActiveRecord::Base
+	has_many :movies
 end

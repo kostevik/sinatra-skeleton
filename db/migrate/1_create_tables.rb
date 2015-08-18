@@ -5,12 +5,15 @@ class CreateTables < ActiveRecord::Migration
       t.string :username
       t.string :email
       t.string :password
+      # t.string :movies --- does this for meeee by creating user_ID in movie table
       t.timestamps
     end
 
     create_table :movies do |t|
       t.string :title
       t.string :year_released
+      # t.string :reviews
+      # t.string :actors
       t.timestamps
     end
 
