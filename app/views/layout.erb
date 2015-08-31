@@ -19,6 +19,15 @@
   <title></title>
 </head>
 <body>
+  <% if current_user %>
+    <a href='/logout'><button class="btn btn-default">Logout</button></a>
+  <% else %>
+    <a href="/login" class="btn btn-default">Login</a>
+    <a href="/signup" class="btn btn-default">Signup</a>
+  <% end%>
   <%= yield %>
+  <% if current_user %>
+    <a href="/movies/new" class="btn btn-success">Add a Movie</a>
+  <% end%>
 </body>
 </html>
