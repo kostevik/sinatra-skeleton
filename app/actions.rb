@@ -1,5 +1,5 @@
 # Homepage (Root path)
-# require "pry"
+require "pry"
 
 helpers do
 	def current_user
