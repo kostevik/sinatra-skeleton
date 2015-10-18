@@ -6,18 +6,13 @@ gem 'rake'
 gem 'activesupport'
 
 gem 'sinatra'
-gem 'sinatra-contrib'
+gem 'sinatra-contrib', '~>1.3.1'
 gem 'sinatra-activerecord'
 
 gem 'pry'
 gem 'puma'
 gem 'tux'
 
-group :production do 
-	gem 'pg'
-end
-
-group :development, :test do
-  gem 'shotgun'
-  gem 'sqlite3'
-end
+gem 'pg'
+gem 'shotgun'
+gem 'activerecord'

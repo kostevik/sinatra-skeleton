@@ -4,8 +4,6 @@ require 'bundler/setup'
 require 'active_support/all'
 
 # Load Sinatra Framework (with AR)
-require 'sinatra'
-require 'sinatra/activerecord'
 require 'sinatra/contrib/all' # Requires cookies, among other things
 
 require 'pry'
@@ -26,6 +24,9 @@ end
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+Dir["#{APP_ROOT.join('app', 'models')}/*.rb"].each do |file|
+	require file
+end
 
 # Load the routes / actions
 require APP_ROOT.join('app', 'actions')
