@@ -1,4 +1,4 @@
-configure :development do
+configure :development, :production do
 
 	db = URI.parse('postgres:///testdatabase')
 
@@ -11,3 +11,4 @@ configure :development do
 	  :encoding => 'utf8'
 	)
 end
+
